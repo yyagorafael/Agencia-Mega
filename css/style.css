@@ -1,0 +1,483 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-bottom: 4px solid #EEC047;
+    top: 0;
+    background-color: white;
+}
+
+.title-content {
+    flex: 28%;
+    margin-left: 2%;
+    text-align: center;
+    align-self: center;
+}
+
+.title {
+    font-family: "Yellowtail", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 50px;
+    color: #2C2E8C;
+    align-items: center;
+
+}
+
+.menu-content {
+    display: flex;
+    flex: 70%;
+    position: relative;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 22px;
+    color: #2C2E8C;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#btn-faleconosco {
+    background-color: #2C2E8C;
+    color: white;
+    border-radius: 10px;
+}
+
+.menu-link:hover {
+    border-top: 4px solid #436CDD;
+    color: #2C2E8C;
+}
+
+#btn-faleconosco:hover {
+    background-color: #436CDD;
+    border-top: none;
+}
+
+.conteudo {
+    display: flex;
+    flex: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.texto-conteudo {
+    display: flex;
+    flex: 45%;
+    flex-direction: column;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+.img_marketing {
+    width: 75%;
+}
+
+.img-conteudo {
+    display: flex;
+    flex: 60%;
+    justify-content: center;
+}
+
+.intro-conteudo,
+.name-conteudo,
+.lorem-conteudo,
+.btn-conteudo {
+    display: flex;
+}
+
+.intro,
+.name,
+.lorem,
+.btn {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.intro {
+    letter-spacing: 5px;
+    font-weight: 750;
+    color: #2C2E8C;
+}
+
+.name {
+    font-size: 70px;
+    font-weight: 1200;
+    color: #2C2E8C;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #436CDD;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #EEC047;
+}
+
+.lorem {
+    color: dimgray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.name-conteudo {
+    margin-top: -75px;
+    margin-bottom: -60px;
+}
+
+.cards-content {
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid #EEC047;
+    background-color: #436CDD;
+    margin-top: 75px;
+    padding-bottom: 5%;
+}
+
+.cards-title-content {
+    text-align: center;
+}
+
+.card1-title-verso,
+.card1-text-verso,
+.card2-title-verso,
+.card2-text-verso,
+.card3-title-verso,
+.card3-text-verso {
+    display: none;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    text-align: justify;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card1-content,
+.card2-content,
+.card3-content {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EEC047;
+    width: 30%;
+    background-color: #E8EDFF;
+    color: #2C2E8C;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.card1-title-face,
+.card1-text-face,
+.card1-img-face,
+.card2-title-face,
+.card2-text-face,
+.card2-img-face,
+.card3-title-face,
+.card3-text-face,
+.card3-img-face {
+    display: block;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: #2C2E8C;
+    text-align: justify;
+}
+
+.card1-title-face,
+.card1-title-verso,
+.card2-title-face,
+.card2-title-verso,
+.card3-title-face,
+.card3-title-verso {
+    font-size: 24px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.card1-text-face,
+.card1-text-verso,
+.card2-text-face,
+.card2-text-verso,
+.card3-text-face,
+.card3-text-verso {
+    font-size: 15px;
+}
+
+.card1-img-face,
+.card2-img-face,
+.card3-img-face {
+    width: 20%;
+}
+
+.card1-content:hover .card1-title-face,
+.card1-content:hover .card1-text-face,
+.card1-content:hover .card1-img-face,
+.card2-content:hover .card2-title-face,
+.card2-content:hover .card2-text-face,
+.card2-content:hover .card2-img-face,
+.card3-content:hover .card3-title-face,
+.card3-content:hover .card3-text-face,
+.card3-content:hover .card3-img-face {
+    display: none;
+}
+
+.card1-content:hover,
+.card2-content:hover,
+.card3-content:hover {
+    background-color: #EEC047;
+}
+
+.card1-content:hover .card1-title-verso,
+.card1-content:hover .card1-text-verso,
+.card2-content:hover .card2-title-verso,
+.card2-content:hover .card2-text-verso,
+.card3-content:hover .card3-title-verso,
+.card3-content:hover .card3-text-verso {
+    display: block;
+    color: #E8EDFF;
+}
+
+.cards-title {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 38px;
+}
+
+.footer-title {
+    font-family: "Yellowtail", cursive;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 44px;
+    color: #E8EDFF;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footer-subtitle {
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #E8EDFF;
+}
+
+.footer-text {
+    margin-top: 5%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #2C2E8C, #000000);
+    border-top: 4px solid #EEC047;
+
+}
+
+.copy {
+    font-family: "Google Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    color: #E8EDFF;
+}
+
+.footer-copy {
+    margin-top: 5%;
+}
+
+/* ===== MOBILE (até 768px) =====
+   Cole este bloco no FINAL do style.css, depois de todas as outras regras. */
+@media (max-width: 768px) {
+
+    /* --- Navbar: só o nome, centralizado --- */
+    .navbar {
+        height: 80px;
+    }
+
+    .menu-content {
+        display: none;
+    }
+
+    .title-content {
+        flex: 1;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    /* --- Conteúdo: texto em cima, imagem embaixo --- */
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 80px;
+    }
+
+    .texto-conteudo {
+        flex: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-conteudo,
+    .name-conteudo,
+    .lorem-conteudo,
+    .btn-conteudo {
+        justify-content: center;
+    }
+
+    .name-conteudo {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .name {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+
+    .img-conteudo {
+        flex: none;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .img_marketing {
+        width: 85%;
+        max-width: 420px;
+        height: auto;
+    }
+
+    /* --- Cards: um embaixo do outro --- */
+    .cards-content {
+        margin-top: 40px;
+    }
+
+    .cards-title-content {
+        padding: 0 16px;
+    }
+
+    .cards-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card1-content,
+    .card2-content,
+    .card3-content {
+        width: 90%;
+    }
+
+    /* --- Rodapé --- */
+    .footer-title {
+        font-size: 36px;
+    }
+
+    .footer-subtitle {
+        padding: 0 16px;
+        font-size: 16px;
+    }
+}
+
+/* ===== TABLET / TELAS MÉDIAS (769px a 1100px) =====
+   Reduz o navbar de forma proporcional para o título e os links caberem em uma linha.
+   Pode ficar em qualquer posição depois das regras originais. */
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .title-content {
+        flex: 0 0 auto;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .title {
+        margin: 0;
+        white-space: nowrap;
+        font-size: clamp(34px, 4.6vw, 50px);
+    }
+
+    .menu-content {
+        flex: 1;
+        justify-content: flex-end;
+        margin-right: 2%;
+    }
+
+    .menu {
+        flex: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-link {
+        white-space: nowrap;
+        padding: clamp(10px, 1.4vw, 20px);
+        font-size: clamp(15px, 1.9vw, 22px);
+    }
+}
